@@ -1,0 +1,24 @@
+@mixin headerBG {
+  background-image: linear-gradient(to top, rgba(68, 106, 130, 0.85), rgba(68, 106, 130, 0.85)), url("../img/bg-photo 1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin checked {
+  background-image: url("../img/Vector.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+  @mixin headerBG {
+    background-attachment: initial;
+  }
+}

@@ -1,0 +1,41 @@
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.main {
+  color: $colorMain;
+  font-family: $fontPage;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 35px;
+  padding-top: 65px;
+  text-align: center;
+}
+
+.video {
+  width: 920px;
+  height: 517px;
+}
+
+
+@media (max-width: 767px) {
+  .video {
+    width: 294px;
+    height: 164px;
+  }
+
+  .container {
+    max-width: 294px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 25px;
+    line-height: 30px;
+    padding-top: 40px;
+  }
+}

@@ -1,0 +1,101 @@
+.header {
+  font-family: $fontPage;
+  color: $colorHeader;
+  @include headerBG;
+
+  &__info {
+    @include flex;
+    padding-top: 130px;
+  }
+
+  &__logo {
+    width: 85px;
+    height: 110px;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 55px;
+    margin-top: 42px;
+  }
+
+  &__description {
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &__button {
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px;
+    background: #FDB913;
+    border-radius: 50px;
+    padding: 18px 30px;
+    border: none;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 130px;
+    cursor: pointer;
+  }
+
+  &__img {
+    width: 445px;
+    height: 683px;
+  }
+}
+
+@media (max-width: 1600px) {
+
+}
+
+
+@media (max-width: 767px) {
+  .header {
+
+    &__info {
+     display: block;
+      padding-top: 10px;
+    }
+
+    &__logo {
+      width: 50px;
+      height: 64px;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    &__description {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__button {
+      width: 160px;
+      height: 40px;
+      padding: 13px 20px;
+      margin-bottom: 22px;
+      margin-top: 25px;
+    }
+
+    &__img {
+      width: 176px;
+      height: 270px;
+    }
+  }
+
+  .image {
+    text-align: center;
+  }
+}
+
+
+
+
+
+

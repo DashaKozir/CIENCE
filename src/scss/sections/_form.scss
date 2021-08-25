@@ -1,0 +1,180 @@
+.form {
+  background: #446A82;
+  color: #ffffff;
+
+  &__container {
+    width: 540px;
+    margin: auto;
+    padding-bottom: 110px;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  &__name {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 40px;
+  }
+
+  &__input {
+    height: 57px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  &__input:focus {
+    box-shadow: 0 3px 8px;
+    outline: none;
+  }
+
+  &__textarea {
+    height: 114px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  &__textarea:focus {
+    box-shadow: 0 3px 8px;
+    outline: none;
+  }
+
+  &__item::placeholder {
+    font-size: 20px;
+    line-height: 25px;
+    color: #446A82;
+    padding: 17px;
+  }
+}
+
+.check {
+  margin-top: 37px;
+  display: flex;
+  align-items: center;
+
+  &__input {
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+  }
+
+  &__label {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 15px;
+    margin-right: 149px;
+  }
+
+  &__button {
+    text-transform: uppercase;
+    padding: 18px 30px;
+    width: 121px;
+    height: 50px;
+    background: #FDB913;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 74px;
+
+  &__img {
+    width: 56px;
+    height: 72px;
+  }
+
+  &__text{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+    margin-left: 35px;
+  }
+}
+
+@media (max-width: 1600px) {
+
+}
+
+
+@media (max-width: 767px) {
+  .form {
+
+    &__container {
+      padding-bottom: 40px;
+      width: 294px;
+      margin: auto;
+    }
+
+    &__title {
+      font-size: 25px;
+      line-height: 35px;
+      text-align: center;
+    }
+
+    &__name {
+      font-size: 16px;
+      line-height: 16px;
+      margin-top: 35px;
+    }
+
+    &__item::placeholder {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  .check {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+
+    &__label {
+      margin: 0;
+    }
+    &__button {
+      width: 160px;
+      height: 40px;
+      margin-top: 25px;
+      padding: 0;
+      color: #ffffff;
+    }
+  }
+
+  .footer {
+    display: block;
+    padding-bottom: 40px;
+
+    &__img {
+      display: none;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 25px;
+      margin: 0;
+    }
+  }
+}
